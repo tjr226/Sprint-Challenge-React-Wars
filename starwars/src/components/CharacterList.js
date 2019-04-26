@@ -9,6 +9,8 @@ function characterList(props) {
                     key={character.created}
                     name={character.name}
                     birth_year={character.birth_year}
+                    vehicle_name={character.vehicle_name}
+                    
                 />
             })}
         </div>

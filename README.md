@@ -56,8 +56,8 @@ Follow these steps to set up and work on your project:
 - [ x ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
 - [ x ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [ x ] Implement the project on this Branch, committing changes regularly.
+- [ x ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
@@ -121,7 +121,7 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
 - [ ] Build a pagination system that will allow you to load the next page of data
 
 - Take note on the data that's coming back from the server call in our `getCharacters()`.
-- console.log() the data coming back from the server.
+- [ x ] console.log() the data coming back from the server.
 - Notice that there are `next` `previous` fields that give you a URL.
 - You have a function that will get chars called `getCharacters` you'll want to just call this function and supply it with the proper fields. You'll need to set this up on state to do this.
 
