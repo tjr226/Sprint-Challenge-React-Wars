@@ -57,8 +57,6 @@ class App extends Component {
   };
 
   applyVehicleNames = () => {
-    console.log("apply vehicle names running");
-    console.log(this.state);
     this.setState({
       starwarsChars: this.state.starwarsChars.map(char => {
         if (char.vehicles[0]) {
