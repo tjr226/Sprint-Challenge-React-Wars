@@ -12,6 +12,7 @@ class App extends Component {
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
+ 
     this.applyVehicleNames();
   }
 
@@ -52,8 +53,8 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        // this.setState({ tempVehicleName: data.name });
-        return data.name
+        this.setState({ tempVehicleName: data.name });
+        // return data.name
       
       })
       .catch(err => {
@@ -64,16 +65,26 @@ class App extends Component {
   };
 
   applyVehicleNames = () => {
+    // console.log("apply vehicle names running");
     this.setState({
       starwarsChars: this.state.starwarsChars.map(char => 
-        char.vehicles[0] ? {...char, vehicleName: this.getVehicleName(char.vehicles[0])} : char
+        { 
+          if (char.vehicles[0]) {
+            this.getVehicleName(char.vehicles[0]);
+            return {...char, vehicle_name: this.tempVehicleName}
+          } else {
+            return char
+          }
+        }
+
+        // char.vehicles[0] ? {...char, vehicleName: this.getVehicleName(char.vehicles[0])} : char
       )
 
   })};
 
 
   render() {
-    console.log(this.state);
+    // console.log(this.state); 
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>

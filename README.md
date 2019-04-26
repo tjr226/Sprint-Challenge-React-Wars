@@ -121,7 +121,7 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
 - [ ] Build a pagination system that will allow you to load the next page of data
 
 - Take note on the data that's coming back from the server call in our `getCharacters()`.
-- [ x ] console.log() the data coming back from the server.
+- console.log() the data coming back from the server.
 - Notice that there are `next` `previous` fields that give you a URL.
 - You have a function that will get chars called `getCharacters` you'll want to just call this function and supply it with the proper fields. You'll need to set this up on state to do this.
 
